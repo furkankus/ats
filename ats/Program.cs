@@ -82,7 +82,7 @@ namespace ats
                 baglanti.ConnectionString = "Data Source=.;Initial Catalog=ATSMES;Integrated Security=SSPI";
                 komut = new SqlCommand();
                 komut.Connection = baglanti;
-                komut.CommandText = "INSERT INTO OrderTable (OrderNo,OrderDesc,OrderQuentity) VALUES ('" + text1 + "','" + text2 + "','" + text3 + "')";
+                komut.CommandText = "INSERT INTO OrderTable (OrderNo,OrderDesc,OrderQuentity) VALUES ('" + text1  + "','" + text2 + "','" + text3 + "')";
 
                 baglanti.Open();
                 int sonuc = komut.ExecuteNonQuery();
