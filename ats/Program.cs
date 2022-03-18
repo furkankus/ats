@@ -144,11 +144,11 @@ namespace ats
             if (y.ToUpper() == "Y")
             {
                 Console.WriteLine("Değiştirmek istediğiniz OrderNo giriniz.");
-                int OrderNo = Convert.ToInt32(Console.ReadLine());
+                string OrderNo = Console.ReadLine();
                 Console.WriteLine("OrderDesc giriniz.");
                 string OrderDesc = Console.ReadLine();
                 Console.WriteLine("OrderQuen giriniz.");
-                int OrderQuen = Convert.ToInt32(Console.ReadLine());
+                string OrderQuen = Console.ReadLine();
 
 
                 baglanti = new SqlConnection();
